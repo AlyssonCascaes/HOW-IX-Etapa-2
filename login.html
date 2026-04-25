@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Denúncias Urbanas Itajaí</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo_denuncia.css">
+</head>
+<body>
+    <div class="container-login">
+        <h2>Entrar</h2>
+        <form id="form-login">
+            <input type="email"    id="email" placeholder="E-mail">
+            <span class="erro" id="erro-email"></span>
+            <input type="password" id="senha" placeholder="Senha">
+            <span class="erro" id="erro-senha"></span>
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="link-login">
+            Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a>
+        </p>
+    </div>
+    <script>
+        // ============== TOAST ==============
+function notificar(mensagem, tipo) {
+    const div = document.createElement("div");
+    div.className = "toast toast-" + (tipo || "info");
+    div.textContent = mensagem;
+    document.body.appendChild(div);
+    setTimeout(() => div.classList.add("show"), 10);
+    setTimeout(() => {
+        div.classList.remove("show");
+        setTimeout(() => div.remove(), 300);
+    }, 3000);
+}
+const form = document.getElementById("form-login");
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const email = document.getElementById("email").value.trim().toLowerCase();
+    const senha = document.getElementById("senha").value;
+    const erroEmail = document.getElementById("erro-email");
+    const erroSenha = document.getElementById("erro-senha");
+    erroEmail.textContent = "";
+    erroSenha.textContent = "";
+    if (email === "") { erroEmail.textContent = "Informe seu e-mail"; return; }
+    if (senha === "") { erroSenha.textContent = "Informe sua senha";  return; }
+    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    const usuario  = usuarios.find(u => u.email === email && u.senha === senha);
+    if (!usuario) {
+        erroSenha.textContent = "E-mail ou senha incorretos";
+        notificar("Falha no login", "erro");
+        return;
+    }
+    localStorage.setItem("usuarioLogado", JSON.stringify({
+        nome:  usuario.nome,
+        email: usuario.email
+    }));
+    notificar("Bem-vindo, " + usuario.nome + "!", "sucesso");
+    setTimeout(() => { window.location.href = "index_denuncia.html"; }, 800);
+});
+    </script>
+</body>
+</html>
