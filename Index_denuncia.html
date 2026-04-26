@@ -1,96 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Denúncias Urbanas Itajaí</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="CSS/estilo_denuncia.css">
-</head>
-<body class="home">
-    <div id="container">
-        <button id="btn-denuncia">Nova denúncia</button>
-        <button id="btn-logout" onclick="logout()">Sair</button>
-        <span id="info-usuario"></span>
-        <div id="topo">
-            <h1 class="logo">Denúncias</h1>
-            <h1 class="logo1">Urbanas</h1>
-            <h5 style="color: #fff; margin-top: 5px;">Ajude a melhorar a nossa cidade denunciando problemas de forma rápida e fácil</h5>
-            <ul style="margin-top: 12px;" id="navegacao">
-                <strong>
-                    <li><a href="#" data-bairro="todos"       class="filtro-bairro ativo">Início</a></li>
-                    <li><a href="#" data-bairro="São Vicente" class="filtro-bairro">São Vicente</a></li>
-                    <li><a href="#" data-bairro="São João"    class="filtro-bairro">São João</a></li>
-                    <li><a href="#" data-bairro="Centro"      class="filtro-bairro">Centro</a></li>
-                    <li><a href="#" data-bairro="Cidade Nova" class="filtro-bairro">Cidade Nova</a></li>
-                    <li><a href="#" data-bairro="outros"      class="filtro-bairro">Outros</a></li>
-                    <li><a href="#" data-bairro="minhas"      class="filtro-bairro">Minhas</a></li>
-                </strong>
-            </ul>
-        </div>
-        <!-- filtro de texto -->
-        <div id="barra-ferramentas">
-    <input type="text" id="campo-busca" placeholder="🔎 Buscar por tipo, rua ou bairro...">
-    <span id="contador-denuncias"></span>
-</div>
-<div id="conteudo">
-    <div id="primario"></div>
-            <div id="secundario"></div>
-            <div id="lateral">
-                <div class="caixa">
-                    <h2>Tipos mais comuns</h2>
-                    <div class="caixa-conteudo1">
-                        <p><span style="color: #9DED3E">&#9679;</span> Buracos na via</p>
-                        <p><span style="color: #9DED3E">&#9679;</span> Lixo irregular</p>
-                        <p><span style="color: #9DED3E">&#9679;</span> Iluminação pública</p>
-                        <p><span style="color: #9DED3E">&#9679;</span> Esgoto</p>
-                        <p><span style="color: #9DED3E">&#9679;</span> Segurança</p>
-                        <p><span style="color: #9DED3E">&#9679;</span> Vandalismo</p><br>
-                        <a style="text-decoration: none; color: #095BAD;" href="https://www.google.com/search?q=todos+os+tipos+de+denuncias+urbanas">Veja todos os tipos</a><br><br>
-                        <a style="text-decoration: none; color: #095BAD;" href="https://www.google.com/search?q=porque+denunciar+problemas+urbanos">Porque denunciar problemas urbanos?</a>
-                    </div>
-                    <div class="caixa-conteudo2">
-                        <h2 style="margin-top: 10px;">Contatos</h2>
-                        <p>Seu contato pode melhorar a cidade!</p><br>
-                        <a style="text-decoration: none; color: #095BAD;" href="index_denuncia.html">contato&copy;suacidade.gov.br</a>
-                        <a style="text-decoration: none; color: #095BAD; font-size: 0.7em;" href="index_denuncia.html">Prefeitura: Tel. (47) 99999-0000</a><br>
-                        <a style="text-decoration: none; color: #095BAD; font-size: 0.7em;" href="index_denuncia.html">Polícia: 190</a><br>
-                        <a style="text-decoration: none; color: #095BAD; font-size: 0.7em;" href="index_denuncia.html">Bombeiros: 193</a>
+    <head>
+        <title>Denúncias Urbanas Itajaí</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="CSS/estilo_denuncia.css">
+    </head>
+    <body class="home">
+        <div id="container"> <!-- Início container -->
+            <button id="btn-denuncia">Nova denúncia</button>
+            <button id="btn-logout" onclick="logout()">Sair</button>
+            <span id="info-usuario"></span>
+            <div id="topo">
+                <h1 class="logo">Denúncias</h1>
+                <h1 class="logo1">Urbanas</h1>
+                <h5 style="color: #fff; margin-top: 5px;">Ajude a melhorar a nossa cidade denunciando problemas de forma rápida e fácil</h5>
+                <ul style="margin-top: 12px;" id="navegacao">
+                    <strong>
+                        <li><a href="#" data-bairro="todos"       class="filtro-bairro ativo">Início</a></li>
+                        <li><a href="#" data-bairro="São Vicente" class="filtro-bairro">São Vicente</a></li>
+                        <li><a href="#" data-bairro="São João"    class="filtro-bairro">São João</a></li>
+                        <li><a href="#" data-bairro="Centro"      class="filtro-bairro">Centro</a></li>
+                        <li><a href="#" data-bairro="Cidade Nova" class="filtro-bairro">Cidade Nova</a></li>
+                        <li><a href="#" data-bairro="outros"      class="filtro-bairro">Outros</a></li>
+                        <li><a href="#" data-bairro="minhas"      class="filtro-bairro">Minhas</a></li>
+                    </strong>
+                </ul>
+            </div>
+            <!-- filtro de texto -->
+            <div id="barra-ferramentas">
+                <input type="text" id="campo-busca" placeholder="🔎 Buscar por tipo, rua ou bairro...">
+                <span id="contador-denuncias"></span>
+            </div>
+            <div id="conteudo">
+                <div id="primario"></div>
+                <div id="secundario"></div>
+                <div id="lateral">
+                    <div class="caixa">
+                        <h2>Tipos mais comuns</h2>
+                        <div class="caixa-conteudo1">
+                            <p><span style="color: #9DED3E">&#9679;</span> Buracos na via</p>
+                            <p><span style="color: #9DED3E">&#9679;</span> Lixo irregular</p>
+                            <p><span style="color: #9DED3E">&#9679;</span> Iluminação pública</p>
+                            <p><span style="color: #9DED3E">&#9679;</span> Esgoto</p>
+                            <p><span style="color: #9DED3E">&#9679;</span> Segurança</p>
+                            <p><span style="color: #9DED3E">&#9679;</span> Vandalismo</p><br>
+                            <a style="text-decoration: none; color: #095BAD;" href="https://www.google.com/search?q=todos+os+tipos+de+denuncias+urbanas">Veja todos os tipos</a><br><br>
+                            <a style="text-decoration: none; color: #095BAD;" href="https://www.google.com/search?q=porque+denunciar+problemas+urbanos">Porque denunciar problemas urbanos?</a>
+                        </div>
+                        <div class="caixa-conteudo2">
+                            <h2 style="margin-top: 10px;">Contatos</h2>
+                            <p>Seu contato pode melhorar a cidade!</p><br>
+                            <a style="text-decoration: none; color: #095BAD;" href="index_denuncia.html">contato&copy;suacidade.gov.br</a>
+                            <a style="text-decoration: none; color: #095BAD; font-size: 0.7em;" href="index_denuncia.html">Prefeitura: Tel. (47) 99999-0000</a><br>
+                            <a style="text-decoration: none; color: #095BAD; font-size: 0.7em;" href="index_denuncia.html">Polícia: 190</a><br>
+                            <a style="text-decoration: none; color: #095BAD; font-size: 0.7em;" href="index_denuncia.html">Bombeiros: 193</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div> <!-- Fim container -->
+        <div id="container-rodape" style="clear: both;">
+            <div id="rodape"><strong>&copy; Copyright 2000- 2026 Denúncias Urbanas Itajaí</strong></div>
         </div>
-    </div>
-    <div id="container-rodape" style="clear: both;">
-        <div id="rodape"><strong>&copy; Copyright 2000- 2026 Denúncias Urbanas Itajaí</strong></div>
-    </div>
-    <!-- MODAL NOVA DENÚNCIA -->
-    <div id="modal-overlay">
-        <div id="modal">
-            <span id="fechar-modal">&times;</span>
-            <h2 class="h2modal">Nova denúncia</h2>
-            <form id="form-denuncia">
-                <label>Tipo do problema:</label>
-                <span class="erro" id="erro-tipo"></span>
-                <input type="text" id="tipo">
-                <label>Endereço:</label>
-                <span class="erro" id="erro-endereco"></span>
-                <!-- Autocomplete usando datalist (HTML nativo) -->
-                <input type="text" id="endereco" list="lista-ruas" autocomplete="off">
-                <datalist id="lista-ruas"></datalist>
-                <label>Adicionar imagem:</label>
-                <span class="erro" id="erro-imagem"></span>
-                <!-- Preview da imagem aparece aqui -->
-                <img id="preview-imagem" alt="Preview">
-                <label class="upload-box" for="imagem">
+        <div id="modal-overlay"> <!-- Inicío Modal -->
+            <div id="modal">
+                <span id="fechar-modal">&times;</span>
+                <h2 class="h2modal">Nova denúncia</h2>
+                <form id="form-denuncia">
+                    <label>Tipo do problema:</label>
+                    <span class="erro" id="erro-tipo"></span>
+                    <input type="text" id="tipo">
+                    <label>Endereço:</label>
+                    <span class="erro" id="erro-endereco"></span>
+                    <!-- Autocomplete usando datalist (HTML nativo) -->
+                    <input type="text" id="endereco" list="lista-ruas" autocomplete="off">
+                    <datalist id="lista-ruas"></datalist>
+                    <label>Adicionar imagem:</label>
+                    <span class="erro" id="erro-imagem"></span>
+                    <!-- Preview da imagem aparece aqui -->
+                    <img id="preview-imagem" alt="Preview">
+                    <label class="upload-box" for="imagem">
                     📷 Clique para adicionar uma imagem
-                </label>
-                <input type="file" id="imagem" accept="image/*" hidden>
-                <button type="submit"><strong>Enviar denúncia</strong></button>
-            </form>
-        </div>
-    </div>
-    <script>
-        // ============== TOAST (NOTIFICAÇÃO) ==============
-        function notificar(mensagem, tipo) {
+                    </label>
+                    <input type="file" id="imagem" accept="image/*" hidden>
+                    <button type="submit"><strong>Enviar denúncia</strong></button>
+                </form>
+            </div>
+        </div> <!-- Fim Modal -->
+
+        <script>
+        //  Toast (notificação do site) 
+            function notificar(mensagem, tipo) {
             const div = document.createElement("div");
             div.className = "toast toast-" + (tipo || "info");
             div.textContent = mensagem;
@@ -100,136 +100,140 @@
                 div.classList.remove("show");
                 setTimeout(() => div.remove(), 300);
             }, 3000);
-        }
-        // ============== LOGOUT COM CONFIRMAÇÃO ==============
-        function logout() {
+            }
+
+        // Função de logout com confirmação
+            function logout() {
             if (confirm("Tem certeza que deseja sair?")) {
                 localStorage.removeItem("usuarioLogado");
                 window.location.href = "boas-vindas.html";
             }
-        }
-        // ============== VERIFICAÇÃO DE LOGIN ==============
-        const usuarioLogadoStr = localStorage.getItem("usuarioLogado");
-        if (!usuarioLogadoStr) {
+            }
+
+        // Login verificação
+            const usuarioLogadoStr = localStorage.getItem("usuarioLogado");
+            if (!usuarioLogadoStr) {
             window.location.href = "boas-vindas.html";
-        }
-        const usuarioLogado = JSON.parse(usuarioLogadoStr);
-        // Mostra o nome do usuário no topo (refinamento B1)
-        document.getElementById("info-usuario").textContent = "Olá, " + usuarioLogado.nome;
-        // ============== LISTA DE RUAS (cole aqui sua lista completa) ==============
-        const ruasCompletas = [
+            }
+            const usuarioLogado = JSON.parse(usuarioLogadoStr);
+            //Usernamen no topo
+            document.getElementById("info-usuario").textContent = "Olá, " + usuarioLogado.nome;
+
+        // Liste de ruas cadastradas
+            const ruasCompletas = [
             {"nome":"Rua Indaial","bairro":"São João"},
-{"nome":"Rua Blumenau","bairro":"São João"},
-{"nome":"Rua José Gall","bairro":"São João"},
-{"nome":"Rua Pedro Cristiano de Miranda","bairro":"São João"},
-{"nome":"Rua Heitor Liberato","bairro":"São João"},
-{"nome":"Rua Tijucas","bairro":"São João"},
-{"nome":"Rua Brusque","bairro":"São João"},
-{"nome":"Rua Joinville","bairro":"São João"},
-{"nome":"Rua Lages","bairro":"São João"},
-{"nome":"Rua São Bento","bairro":"São João"},
+            {"nome":"Rua Blumenau","bairro":"São João"},
+            {"nome":"Rua José Gall","bairro":"São João"},
+            {"nome":"Rua Pedro Cristiano de Miranda","bairro":"São João"},
+            {"nome":"Rua Heitor Liberato","bairro":"São João"},
+            {"nome":"Rua Tijucas","bairro":"São João"},
+            {"nome":"Rua Brusque","bairro":"São João"},
+            {"nome":"Rua Joinville","bairro":"São João"},
+            {"nome":"Rua Lages","bairro":"São João"},
+            {"nome":"Rua São Bento","bairro":"São João"},
 
-{"nome":"Rua Estefano José Vanolli","bairro":"São Vicente"},
-{"nome":"Rua João Bauer","bairro":"São Vicente"},
-{"nome":"Rua Alfredo Trompowski","bairro":"São Vicente"},
-{"nome":"Rua Vereador Abrahão João Francisco","bairro":"São Vicente"},
-{"nome":"Rua Agílio Cunha","bairro":"São Vicente"},
-{"nome":"Rua Leopoldo Zarling","bairro":"São Vicente"},
-{"nome":"Rua José Pereira Liberato","bairro":"São Vicente"},
-{"nome":"Rua João Tomaz Pinto","bairro":"São Vicente"},
-{"nome":"Rua Domingos Rampelotti","bairro":"São Vicente"},
-{"nome":"Rua Adolfo Konder","bairro":"São Vicente"},
+            {"nome":"Rua Estefano José Vanolli","bairro":"São Vicente"},
+            {"nome":"Rua João Bauer","bairro":"São Vicente"},
+            {"nome":"Rua Alfredo Trompowski","bairro":"São Vicente"},
+            {"nome":"Rua Vereador Abrahão João Francisco","bairro":"São Vicente"},
+            {"nome":"Rua Agílio Cunha","bairro":"São Vicente"},
+            {"nome":"Rua Leopoldo Zarling","bairro":"São Vicente"},
+            {"nome":"Rua José Pereira Liberato","bairro":"São Vicente"},
+            {"nome":"Rua João Tomaz Pinto","bairro":"São Vicente"},
+            {"nome":"Rua Domingos Rampelotti","bairro":"São Vicente"},
+            {"nome":"Rua Adolfo Konder","bairro":"São Vicente"},
 
-{"nome":"Rua Cônego Tomás Fontes","bairro":"Centro"},
-{"nome":"Rua Hercílio Luz","bairro":"Centro"},
-{"nome":"Rua Felipe Schmidt","bairro":"Centro"},
-{"nome":"Rua XV de Novembro","bairro":"Centro"},
-{"nome":"Rua Tijucas","bairro":"Centro"},
-{"nome":"Rua Lauro Müller","bairro":"Centro"},
-{"nome":"Rua Camboriú","bairro":"Centro"},
-{"nome":"Rua Silva","bairro":"Centro"},
-{"nome":"Rua Uruguai","bairro":"Centro"},
-{"nome":"Rua Brusque","bairro":"Centro"},
+            {"nome":"Rua Cônego Tomás Fontes","bairro":"Centro"},
+            {"nome":"Rua Hercílio Luz","bairro":"Centro"},
+            {"nome":"Rua Felipe Schmidt","bairro":"Centro"},
+            {"nome":"Rua XV de Novembro","bairro":"Centro"},
+            {"nome":"Rua Tijucas","bairro":"Centro"},
+            {"nome":"Rua Lauro Müller","bairro":"Centro"},
+            {"nome":"Rua Camboriú","bairro":"Centro"},
+            {"nome":"Rua Silva","bairro":"Centro"},
+            {"nome":"Rua Uruguai","bairro":"Centro"},
+            {"nome":"Rua Brusque","bairro":"Centro"},
 
-{"nome":"Rua Francisco Molleri","bairro":"Cidade Nova"},
-{"nome":"Rua Henrique da Silva Fontes","bairro":"Cidade Nova"},
-{"nome":"Rua Paulo Kleis","bairro":"Cidade Nova"},
-{"nome":"Rua José Siqueira","bairro":"Cidade Nova"},
-{"nome":"Rua Pedro José João","bairro":"Cidade Nova"},
-{"nome":"Rua Maria Rosa","bairro":"Cidade Nova"},
-{"nome":"Rua Bento Custódio Vieira","bairro":"Cidade Nova"},
-{"nome":"Rua Luiz Lopes Gonzaga","bairro":"Cidade Nova"},
-{"nome":"Rua Antônio José Cabral","bairro":"Cidade Nova"},
-{"nome":"Rua São Cristóvão","bairro":"Cidade Nova"},
+            {"nome":"Rua Francisco Molleri","bairro":"Cidade Nova"},
+            {"nome":"Rua Henrique da Silva Fontes","bairro":"Cidade Nova"},
+            {"nome":"Rua Paulo Kleis","bairro":"Cidade Nova"},
+            {"nome":"Rua José Siqueira","bairro":"Cidade Nova"},
+            {"nome":"Rua Pedro José João","bairro":"Cidade Nova"},
+            {"nome":"Rua Maria Rosa","bairro":"Cidade Nova"},
+            {"nome":"Rua Bento Custódio Vieira","bairro":"Cidade Nova"},
+            {"nome":"Rua Luiz Lopes Gonzaga","bairro":"Cidade Nova"},
+            {"nome":"Rua Antônio José Cabral","bairro":"Cidade Nova"},
+            {"nome":"Rua São Cristóvão","bairro":"Cidade Nova"},
 
-{"nome":"Av. Min. Victor Konder","bairro":"Fazenda"},
-{"nome":"Rua Tubarão","bairro":"Fazenda"},
-{"nome":"Rua Laguna","bairro":"Fazenda"},
-{"nome":"Rua Joinville","bairro":"Fazenda"},
-{"nome":"Rua Brusque","bairro":"Fazenda"},
-{"nome":"Rua Tijucas","bairro":"Fazenda"},
-{"nome":"Rua Camboriú","bairro":"Fazenda"},
-{"nome":"Rua Balneário Camboriú","bairro":"Fazenda"},
-{"nome":"Rua São José","bairro":"Fazenda"},
-{"nome":"Rua Itapema","bairro":"Fazenda"},
+            {"nome":"Av. Min. Victor Konder","bairro":"Fazenda"},
+            {"nome":"Rua Tubarão","bairro":"Fazenda"},
+            {"nome":"Rua Laguna","bairro":"Fazenda"},
+            {"nome":"Rua Joinville","bairro":"Fazenda"},
+            {"nome":"Rua Brusque","bairro":"Fazenda"},
+            {"nome":"Rua Tijucas","bairro":"Fazenda"},
+            {"nome":"Rua Camboriú","bairro":"Fazenda"},
+            {"nome":"Rua Balneário Camboriú","bairro":"Fazenda"},
+            {"nome":"Rua São José","bairro":"Fazenda"},
+            {"nome":"Rua Itapema","bairro":"Fazenda"},
 
-{"nome":"Rua Irene Bonanomi da Silva","bairro":"Ressacada"},
-{"nome":"Rua Antônio Ayres dos Santos","bairro":"Ressacada"},
-{"nome":"Rua Maria da Glória","bairro":"Ressacada"},
-{"nome":"Rua Sebastião Romeu Soares","bairro":"Ressacada"},
-{"nome":"Rua José Tedesco","bairro":"Ressacada"},
-{"nome":"Rua Júlio Vieira","bairro":"Ressacada"},
-{"nome":"Rua Pedro João de Souza","bairro":"Ressacada"},
-{"nome":"Rua Henrique Farias","bairro":"Ressacada"},
-{"nome":"Rua Osvaldo Reis","bairro":"Ressacada"},
-{"nome":"Rua São Judas","bairro":"Ressacada"},
+            {"nome":"Rua Irene Bonanomi da Silva","bairro":"Ressacada"},
+            {"nome":"Rua Antônio Ayres dos Santos","bairro":"Ressacada"},
+            {"nome":"Rua Maria da Glória","bairro":"Ressacada"},
+            {"nome":"Rua Sebastião Romeu Soares","bairro":"Ressacada"},
+            {"nome":"Rua José Tedesco","bairro":"Ressacada"},
+            {"nome":"Rua Júlio Vieira","bairro":"Ressacada"},
+            {"nome":"Rua Pedro João de Souza","bairro":"Ressacada"},
+            {"nome":"Rua Henrique Farias","bairro":"Ressacada"},
+            {"nome":"Rua Osvaldo Reis","bairro":"Ressacada"},
+            {"nome":"Rua São Judas","bairro":"Ressacada"},
 
-{"nome":"Rua Teodoro Lino Rígis","bairro":"Murta"},
-{"nome":"Rua João Rodrigues","bairro":"Murta"},
-{"nome":"Rua São Pedro","bairro":"Murta"},
-{"nome":"Rua São Paulo","bairro":"Murta"},
-{"nome":"Rua Rio Grande","bairro":"Murta"},
-{"nome":"Rua Santa Catarina","bairro":"Murta"},
-{"nome":"Rua Paraná","bairro":"Murta"},
-{"nome":"Rua Minas Gerais","bairro":"Murta"},
-{"nome":"Rua Bahia","bairro":"Murta"},
-{"nome":"Rua Pernambuco","bairro":"Murta"},
+            {"nome":"Rua Teodoro Lino Rígis","bairro":"Murta"},
+            {"nome":"Rua João Rodrigues","bairro":"Murta"},
+            {"nome":"Rua São Pedro","bairro":"Murta"},
+            {"nome":"Rua São Paulo","bairro":"Murta"},
+            {"nome":"Rua Rio Grande","bairro":"Murta"},
+            {"nome":"Rua Santa Catarina","bairro":"Murta"},
+            {"nome":"Rua Paraná","bairro":"Murta"},
+            {"nome":"Rua Minas Gerais","bairro":"Murta"},
+            {"nome":"Rua Bahia","bairro":"Murta"},
+            {"nome":"Rua Pernambuco","bairro":"Murta"},
 
-{"nome":"Rua Fermino Vieira Cordeiro","bairro":"Espinheiros"},
-{"nome":"Rua Pedro Wanzuita","bairro":"Espinheiros"},
-{"nome":"Rua João de Souza","bairro":"Espinheiros"},
-{"nome":"Rua Luiz Gonzaga","bairro":"Espinheiros"},
-{"nome":"Rua Alberto Werner","bairro":"Espinheiros"},
-{"nome":"Rua Henrique Fernandes","bairro":"Espinheiros"},
-{"nome":"Rua José Rodrigues","bairro":"Espinheiros"},
-{"nome":"Rua São Marcos","bairro":"Espinheiros"},
-{"nome":"Rua São Lucas","bairro":"Espinheiros"},
-{"nome":"Rua São Mateus","bairro":"Espinheiros"},
+            {"nome":"Rua Fermino Vieira Cordeiro","bairro":"Espinheiros"},
+            {"nome":"Rua Pedro Wanzuita","bairro":"Espinheiros"},
+            {"nome":"Rua João de Souza","bairro":"Espinheiros"},
+            {"nome":"Rua Luiz Gonzaga","bairro":"Espinheiros"},
+            {"nome":"Rua Alberto Werner","bairro":"Espinheiros"},
+            {"nome":"Rua Henrique Fernandes","bairro":"Espinheiros"},
+            {"nome":"Rua José Rodrigues","bairro":"Espinheiros"},
+            {"nome":"Rua São Marcos","bairro":"Espinheiros"},
+            {"nome":"Rua São Lucas","bairro":"Espinheiros"},
+            {"nome":"Rua São Mateus","bairro":"Espinheiros"},
 
-{"nome":"Rua Reinaldo Schmithausen","bairro":"Cordeiros"},
-{"nome":"Rua Odílio Garcia","bairro":"Cordeiros"},
-{"nome":"Rua Blumenau","bairro":"Cordeiros"},
-{"nome":"Rua Indaial","bairro":"Cordeiros"},
-{"nome":"Rua Brusque","bairro":"Cordeiros"},
-{"nome":"Rua Timbó","bairro":"Cordeiros"},
-{"nome":"Rua Gaspar","bairro":"Cordeiros"},
-{"nome":"Rua Ilhota","bairro":"Cordeiros"},
-{"nome":"Rua Navegantes","bairro":"Cordeiros"},
-{"nome":"Rua Penha","bairro":"Cordeiros"},
+            {"nome":"Rua Reinaldo Schmithausen","bairro":"Cordeiros"},
+            {"nome":"Rua Odílio Garcia","bairro":"Cordeiros"},
+            {"nome":"Rua Blumenau","bairro":"Cordeiros"},
+            {"nome":"Rua Indaial","bairro":"Cordeiros"},
+            {"nome":"Rua Brusque","bairro":"Cordeiros"},
+            {"nome":"Rua Timbó","bairro":"Cordeiros"},
+            {"nome":"Rua Gaspar","bairro":"Cordeiros"},
+            {"nome":"Rua Ilhota","bairro":"Cordeiros"},
+            {"nome":"Rua Navegantes","bairro":"Cordeiros"},
+            {"nome":"Rua Penha","bairro":"Cordeiros"},
 
-{"nome":"Rua Brusque","bairro":"Dom Bosco"},
-{"nome":"Rua Indaial","bairro":"Dom Bosco"},
-{"nome":"Rua Camboriú","bairro":"Dom Bosco"},
-{"nome":"Rua Joinville","bairro":"Dom Bosco"},
-{"nome":"Rua Blumenau","bairro":"Dom Bosco"},
-{"nome":"Rua Gaspar","bairro":"Dom Bosco"},
-{"nome":"Rua Timbó","bairro":"Dom Bosco"},
-{"nome":"Rua Itajaí","bairro":"Dom Bosco"},
-{"nome":"Rua Navegantes","bairro":"Dom Bosco"},
-{"nome":"Rua Penha","bairro":"Dom Bosco"}
-        ];
-        // ============== LISTA DE DENÚNCIAS ==============
-        const denunciasIniciais = [
+            {"nome":"Rua Brusque","bairro":"Dom Bosco"},
+            {"nome":"Rua Indaial","bairro":"Dom Bosco"},
+            {"nome":"Rua Camboriú","bairro":"Dom Bosco"},
+            {"nome":"Rua Joinville","bairro":"Dom Bosco"},
+            {"nome":"Rua Blumenau","bairro":"Dom Bosco"},
+            {"nome":"Rua Gaspar","bairro":"Dom Bosco"},
+            {"nome":"Rua Timbó","bairro":"Dom Bosco"},
+            {"nome":"Rua Itajaí","bairro":"Dom Bosco"},
+            {"nome":"Rua Navegantes","bairro":"Dom Bosco"},
+            {"nome":"Rua Penha","bairro":"Dom Bosco"}
+            ];
+
+        // Lista de Denúncias Fixas
+            const denunciasIniciais = [
             { tipo: "Lixo irregular",        endereco: "Av. Campos Novos",            bairro: "São Vicente", data: "09/01/2026", status: "Resolvido",  imagem: "imagens/lixo-cidade.png",      autor: "sistema" },
             { tipo: "Alagamento",            endereco: "Rua Francisco Molleri",       bairro: "Cidade Nova", data: "20/03/2026", status: "Em análise", imagem: "imagens/alagamento.png",       autor: "sistema" },
             { tipo: "Buraco na rua",         endereco: "Rua Indaial",                 bairro: "São João",    data: "25/09/2025", status: "Resolvido",  imagem: "imagens/buraco-na-rua.png",    autor: "sistema" },
@@ -238,33 +242,39 @@
             { tipo: "Exposição de esgoto",   endereco: "Rua Teodoro Lino Rígis",      bairro: "Murta",       data: "28/02/2026", status: "Em Aberto",  imagem: "imagens/esgoto-exposto.png",   autor: "sistema" },
             { tipo: "Falta de iluminação",   endereco: "Av. Nilo Bitencourt",         bairro: "São Vicente", data: "06/01/2026", status: "Em análise", imagem: "imagens/ma-iluminacao.png",    autor: "sistema" },
             { tipo: "Vandalismo",            endereco: "Rua Irene Bonanomi da Silva", bairro: "Ressacada",   data: "02/03/2026", status: "Resolvido",  imagem: "imagens/vandalismo.png",       autor: "sistema" }
-        ];
-        function carregarDenuncias() {
+            ];
+
+            function carregarDenuncias() {
             const cadastradas = JSON.parse(localStorage.getItem("denuncias")) || [];
             const todas = [...denunciasIniciais, ...cadastradas];
-            // Refinamento C4: ordena por data (mais recentes primeiro)
+            // ordenação por data
             return todas.sort((a, b) => {
-                const [da, ma, ya] = a.data.split("/").map(Number);
-                const [db, mb, yb] = b.data.split("/").map(Number);
-                return new Date(yb, mb-1, db) - new Date(ya, ma-1, da);
+            const [da, ma, ya] = a.data.split("/").map(Number);
+            const [db, mb, yb] = b.data.split("/").map(Number);
+            return new Date(yb, mb-1, db) - new Date(ya, ma-1, da);
             });
-        }
-        const bairrosPrincipais = ["São Vicente", "São João", "Centro", "Cidade Nova"];
-        // ============== POPULA AUTOCOMPLETE (refinamento A3) ==============
-        const datalist = document.getElementById("lista-ruas");
+            }
+        // Definição de Bairros principais
+            const bairrosPrincipais = ["São Vicente", "São João", "Centro", "Cidade Nova"];
+
+        // Autocomplete
+            const datalist = document.getElementById("lista-ruas");
+
         // Remove ruas duplicadas pra não poluir a lista
-        const nomesUnicos = [...new Set(ruasCompletas.map(r => r.nome))];
-        nomesUnicos.forEach(nome => {
+            const nomesUnicos = [...new Set(ruasCompletas.map(r => r.nome))];
+            nomesUnicos.forEach(nome => {
             const opt = document.createElement("option");
             opt.value = nome;
             datalist.appendChild(opt);
-        });
-        // ============== RENDERIZAÇÃO DOS CARTÕES ==============
-        let filtroAtual = "todos";
-        let buscaAtual  = "";
-        function renderizar() {
+            });
+
+        // Renderização dos cartões
+            let filtroAtual = "todos";
+            let buscaAtual  = "";
+            function renderizar() {
             const todas = carregarDenuncias();
-            // Aplica filtro por bairro (ou "minhas" - refinamento B3)
+
+        // Aplica filtro por bairro e "minhas"
             let filtradas;
             if (filtroAtual === "todos") {
                 filtradas = todas;
@@ -275,16 +285,18 @@
             } else {
                 filtradas = todas.filter(d => d.bairro === filtroAtual);
             }
-            // Aplica filtro de busca por texto (refinamento A1)
+
+        // Aplica filtro de busca por texto
             if (buscaAtual !== "") {
                 const termo = buscaAtual.toLowerCase();
                 filtradas = filtradas.filter(d =>
-                    d.tipo.toLowerCase().includes(termo) ||
-                    d.endereco.toLowerCase().includes(termo) ||
-                    d.bairro.toLowerCase().includes(termo)
+                d.tipo.toLowerCase().includes(termo) ||
+                d.endereco.toLowerCase().includes(termo) ||
+                d.bairro.toLowerCase().includes(termo)
                 );
             }
-            // Atualiza contador (refinamento A4)
+
+        // Atualiza contador
             const contador = document.getElementById("contador-denuncias");
             const total = filtradas.length;
             contador.textContent = total === 1
@@ -304,48 +316,52 @@
                 if (d.status === "Em análise") classeStatus = "clasificacaoEmAnalise";
                 const html = `
                     <div class="caixa">
-                        <div class="caixa-conteudo1">
-                            <h2 class="${classeStatus}">${d.status}</h2>
-                            <h2 class="h2">${d.tipo}</h2>
-                            <p>&#128204; ${d.endereco} - ${d.bairro}</p>
-                            <p>Data: ${d.data}</p>
-                            <img src="${d.imagem}" onerror="this.style.display='none'">
-                        </div>
+                    <div class="caixa-conteudo1">
+                    <h2 class="${classeStatus}">${d.status}</h2>
+                    <h2 class="h2">${d.tipo}</h2>
+                    <p>&#128204; ${d.endereco} - ${d.bairro}</p>
+                    <p>Data: ${d.data}</p>
+                    <img src="${d.imagem}" onerror="this.style.display='none'">
                     </div>
-                `;
+                    </div>
+                    `;
                 if (i % 2 === 0) primario.innerHTML   += html;
                 else             secundario.innerHTML += html;
             });
-        }
-        // ============== EVENTOS DE FILTRO ==============
-        const linksFiltro = document.querySelectorAll(".filtro-bairro");
-        linksFiltro.forEach(link => {
-            link.addEventListener("click", function(event) {
+            }
+
+        // Eventos de filtro
+            const linksFiltro = document.querySelectorAll(".filtro-bairro");
+            linksFiltro.forEach(link => {
+                link.addEventListener("click", function(event) {
                 event.preventDefault();
                 linksFiltro.forEach(l => l.classList.remove("ativo"));
                 this.classList.add("ativo");
                 filtroAtual = this.dataset.bairro;
                 renderizar();
             });
-        });
-        // Busca por texto (refinamento A1)
-        document.getElementById("campo-busca").addEventListener("input", function() {
+            });
+
+        // Busca por texto
+            document.getElementById("campo-busca").addEventListener("input", function() {
             buscaAtual = this.value.trim();
             renderizar();
-        });
-        renderizar();
-        // ============== MODAL NOVA DENÚNCIA ==============
-        const botao  = document.getElementById("btn-denuncia");
-        const modal  = document.getElementById("modal-overlay");
-        const fechar = document.getElementById("fechar-modal");
-        botao.onclick  = function() { modal.style.display = "flex"; };
-        fechar.onclick = function() { modal.style.display = "none"; };
-        window.onclick = function(event) {
-            if (event.target == modal) modal.style.display = "none";
-        };
-        // ============== ENVIO DA DENÚNCIA ==============
-        const form = document.getElementById("form-denuncia");
-        form.addEventListener("submit", function(event) {
+            });
+            renderizar();
+
+        // Modal nova denúncia
+            const botao  = document.getElementById("btn-denuncia");
+            const modal  = document.getElementById("modal-overlay");
+            const fechar = document.getElementById("fechar-modal");
+            botao.onclick  = function() { modal.style.display = "flex"; };
+            fechar.onclick = function() { modal.style.display = "none"; };
+            window.onclick = function(event) {
+                if (event.target == modal) modal.style.display = "none";
+            };
+
+        // Envio da denúncia
+            const form = document.getElementById("form-denuncia");
+            form.addEventListener("submit", function(event) {
             event.preventDefault();
             let valido = true;
             const tipo          = document.getElementById("tipo").value.trim();
@@ -384,14 +400,14 @@
             }
             const leitor = new FileReader();
             leitor.onload = function(e) {
-                const novaDenuncia = {
-                    tipo:     tipo,
-                    endereco: ruaEncontrada.nome,
-                    bairro:   ruaEncontrada.bairro,
-                    data:     new Date().toLocaleDateString("pt-BR"),
-                    status:   "Em Aberto",
-                    imagem:   e.target.result,
-                    autor:    usuarioLogado.email   // refinamento B2
+            const novaDenuncia = {
+                tipo:     tipo,
+                endereco: ruaEncontrada.nome,
+                bairro:   ruaEncontrada.bairro,
+                data:     new Date().toLocaleDateString("pt-BR"),
+                status:   "Em Aberto",
+                imagem:   e.target.result,
+                autor:    usuarioLogado.email   // refinamento B2
                 };
                 const cadastradas = JSON.parse(localStorage.getItem("denuncias")) || [];
                 cadastradas.push(novaDenuncia);
@@ -404,160 +420,169 @@
                 renderizar();
             };
             leitor.readAsDataURL(arquivoImagem);
-        });
-        // ============== PREVIEW DA IMAGEM (refinamento C3) ==============
-        const inputImagem = document.getElementById("imagem");
-        const uploadBox   = document.querySelector(".upload-box");
-        const previewImg  = document.getElementById("preview-imagem");
-        inputImagem.addEventListener("change", function() {
-            if (this.files.length > 0) {
-                const arquivo = this.files[0];
-                uploadBox.textContent = "Imagem selecionada: " + arquivo.name;
-                const leitor = new FileReader();
-                leitor.onload = function(e) {
-                    previewImg.src = e.target.result;
-                    previewImg.style.display = "block";
-                };
+            });
+        // Prevíew da imagem
+            const inputImagem = document.getElementById("imagem");
+            const uploadBox   = document.querySelector(".upload-box");
+            const previewImg  = document.getElementById("preview-imagem");
+            inputImagem.addEventListener("change", function() {
+                if (this.files.length > 0) {
+                    const arquivo = this.files[0];
+                    uploadBox.textContent = "Imagem selecionada: " + arquivo.name;
+                    const leitor = new FileReader();
+                    leitor.onload = function(e) {
+                        previewImg.src = e.target.result;
+                        previewImg.style.display = "block";
+                    };
                 leitor.readAsDataURL(arquivo);
-            }
-        });
+                }
+            });
 
-        // ============== PRODUCT TOUR ==============
-const passosTour = [
-    {
-        seletor: "#info-usuario",
-        titulo: "Bem-vindo, " + usuarioLogado.nome + "!",
-        texto: "Aqui você vê quem está logado. Vamos te mostrar como o sistema funciona em poucos passos."
-    },
-    {
-        seletor: "#btn-denuncia",
-        titulo: "Cadastre uma nova denúncia",
-        texto: "Clique aqui sempre que quiser registrar um problema na cidade. Você poderá informar o tipo, o endereço e adicionar uma foto."
-    },
-    {
-        seletor: "#campo-busca",
-        titulo: "Busca rápida",
-        texto: "Digite aqui pra procurar denúncias por tipo, rua ou bairro. O resultado aparece na hora."
-    },
-    {
-        seletor: "#navegacao",
-        titulo: "Filtros por bairro",
-        texto: "Use o menu pra filtrar as denúncias por bairro. Bairros menos comuns aparecem em \"Outros\"."
-    },
-    {
-        seletor: "[data-bairro='minhas']",
-        titulo: "Suas denúncias",
-        texto: "O filtro \"Minhas\" mostra apenas as denúncias que você cadastrou. Útil pra acompanhar o que enviou."
-    },
-    {
-        seletor: "#btn-logout",
-        titulo: "Sair com segurança",
-        texto: "Quando terminar, clique em Sair pra encerrar sua sessão. Pronto, agora é só usar!"
-    }
-];
-let passoAtual = 0;
-let spotlight  = null;
-let tooltip    = null;
-function iniciarTour() {
-    passoAtual = 0;
-    if (spotlight) spotlight.remove();
-    if (tooltip)   tooltip.remove();
-    spotlight = document.createElement("div");
-    spotlight.id = "tour-spotlight";
-    document.body.appendChild(spotlight);
-    tooltip = document.createElement("div");
-    tooltip.id = "tour-tooltip";
-    document.body.appendChild(tooltip);
-    mostrarPasso(0);
-    // Atualiza posição se o usuário redimensionar a janela
-    window.addEventListener("resize", reposicionarPasso);
-}
-function mostrarPasso(i) {
-    const passo = passosTour[i];
-    const el    = document.querySelector(passo.seletor);
-    if (!el) { proximoPasso(); return; }
-    // Garante que o elemento esteja visível na tela
-    el.scrollIntoView({ behavior: "smooth", block: "center" });
-    // Pequeno delay para o scroll terminar antes de medir a posição
-    setTimeout(() => {
-        const rect    = el.getBoundingClientRect();
-        const padding = 8;
+        // Product Tour (Tour interativo)
+            const passosTour = [
+            {
+                seletor: "#info-usuario",
+                titulo: "Bem-vindo, " + usuarioLogado.nome + "!",
+                texto: "Aqui você vê quem está logado. Vamos te mostrar como o sistema funciona em poucos passos."
+            },
+            {
+                seletor: "#btn-denuncia",
+                titulo: "Cadastre uma nova denúncia",
+                texto: "Clique aqui sempre que quiser registrar um problema na cidade. Você poderá informar o tipo, o endereço e adicionar uma foto."
+            },
+            {
+                seletor: "#campo-busca",
+                titulo: "Busca rápida",
+                texto: "Digite aqui pra procurar denúncias por tipo, rua ou bairro. O resultado aparece na hora."
+            },
+            {
+                seletor: "#navegacao",
+                titulo: "Filtros por bairro",
+                texto: "Use o menu pra filtrar as denúncias por bairro. Bairros menos comuns aparecem em \"Outros\"."
+            },
+            {
+                seletor: "[data-bairro='minhas']",
+                titulo: "Suas denúncias",
+                texto: "O filtro \"Minhas\" mostra apenas as denúncias que você cadastrou. Útil pra acompanhar o que enviou."
+            },
+            {
+                seletor: "#btn-logout",
+                titulo: "Sair com segurança",
+                texto: "Quando terminar, clique em Sair pra encerrar sua sessão. Pronto, agora é só usar!"
+            }
+            ];
+            let passoAtual = 0;
+            let spotlight  = null;
+            let tooltip    = null;
+            function iniciarTour() {
+                passoAtual = 0;
+                if (spotlight) spotlight.remove();
+                if (tooltip)   tooltip.remove();
+                spotlight = document.createElement("div");
+                spotlight.id = "tour-spotlight";
+                document.body.appendChild(spotlight);
+                tooltip = document.createElement("div");
+                tooltip.id = "tour-tooltip";
+                document.body.appendChild(tooltip);
+                mostrarPasso(0);
+                // Atualiza posição se o usuário redimensionar a janela
+                window.addEventListener("resize", reposicionarPasso);
+            }
+            function mostrarPasso(i) {
+                const passo = passosTour[i];
+                const el    = document.querySelector(passo.seletor);
+                if (!el) { proximoPasso(); return; }
+
+            // Garante que o elemento esteja visível na tela (correção de bug visual)
+                el.scrollIntoView({ behavior: "smooth", block: "center" });
+
+            // Pequeno delay para o scroll terminar antes de medir a posição
+                setTimeout(() => {
+                const rect    = el.getBoundingClientRect();
+                const padding = 8;
+
         // Posiciona o spotlight em volta do elemento
-        spotlight.style.top    = (rect.top    - padding) + "px";
-        spotlight.style.left   = (rect.left   - padding) + "px";
-        spotlight.style.width  = (rect.width  + padding * 2) + "px";
-        spotlight.style.height = (rect.height + padding * 2) + "px";
+            spotlight.style.top    = (rect.top    - padding) + "px";
+            spotlight.style.left   = (rect.left   - padding) + "px";
+            spotlight.style.width  = (rect.width  + padding * 2) + "px";
+            spotlight.style.height = (rect.height + padding * 2) + "px";
+
         // Monta o conteúdo do balão
-        const ehUltimo  = (i === passosTour.length - 1);
-        const ehPrimeiro = (i === 0);
-        tooltip.innerHTML = `
+            const ehUltimo  = (i === passosTour.length - 1);
+            const ehPrimeiro = (i === 0);
+            tooltip.innerHTML = `
             <h3>${passo.titulo}</h3>
             <p>${passo.texto}</p>
             <div class="tour-footer">
-                <span class="tour-counter">${i + 1} de ${passosTour.length}</span>
-                <div class="tour-botoes">
-                    <button class="tour-btn-pular"   onclick="encerrarTour()">Pular</button>
-                    ${!ehPrimeiro ? '<button class="tour-btn-voltar" onclick="passoAnterior()">Voltar</button>' : ''}
-                    <button class="tour-btn-proximo" onclick="proximoPasso()">${ehUltimo ? "Finalizar" : "Próximo"}</button>
-                </div>
+            <span class="tour-counter">${i + 1} de ${passosTour.length}</span>
+            <div class="tour-botoes">
+            <button class="tour-btn-pular"   onclick="encerrarTour()">Pular</button>
+             ${!ehPrimeiro ? '<button class="tour-btn-voltar" onclick="passoAnterior()">Voltar</button>' : ''}
+            <button class="tour-btn-proximo" onclick="proximoPasso()">${ehUltimo ? "Finalizar" : "Próximo"}</button>
             </div>
-        `;
-        // Posiciona o balão (acima ou abaixo do elemento, conforme couber)
-        const tooltipAltura = 180;
-        let topo, classeSeta;
-        if (rect.bottom + tooltipAltura + 20 < window.innerHeight) {
+            </div>
+            `;
+
+        // Posiciona o balão (acima ou abaixo do elemento, como couber)
+            const tooltipAltura = 180;
+            let topo, classeSeta;
+            if (rect.bottom + tooltipAltura + 20 < window.innerHeight) {
+
             // Tem espaço embaixo → balão fica embaixo
             topo = rect.bottom + 16;
             classeSeta = "seta-cima";
-        } else {
+            } else {
+
             // Não tem espaço embaixo → balão fica em cima
             topo = rect.top - tooltipAltura - 16;
             classeSeta = "seta-baixo";
-        }
+            }
+
         // Centraliza horizontalmente, mas mantém dentro da tela
-        let esquerda = rect.left;
-        const larguraTooltip = 320;
-        if (esquerda + larguraTooltip > window.innerWidth - 10) {
-            esquerda = window.innerWidth - larguraTooltip - 10;
-        }
-        if (esquerda < 10) esquerda = 10;
-        tooltip.style.top  = topo + "px";
-        tooltip.style.left = esquerda + "px";
-        tooltip.className  = classeSeta;
-    }, 300);
-}
-function proximoPasso() {
-    passoAtual++;
-    if (passoAtual >= passosTour.length) {
-        encerrarTour();
-        notificar("Tour concluído! Bom uso do sistema.", "sucesso");
-        return;
-    }
-    mostrarPasso(passoAtual);
-}
-function passoAnterior() {
-    if (passoAtual > 0) {
-        passoAtual--;
-        mostrarPasso(passoAtual);
-    }
-}
-function reposicionarPasso() {
-    if (spotlight && tooltip) mostrarPasso(passoAtual);
-}
-function encerrarTour() {
-    if (spotlight) spotlight.remove();
-    if (tooltip)   tooltip.remove();
-    spotlight = null;
-    tooltip   = null;
-    window.removeEventListener("resize", reposicionarPasso);
-    localStorage.setItem("tourVisto", "sim");
-}
-// Inicia o tour automaticamente na primeira vez que o usuário entra
-if (!localStorage.getItem("tourVisto")) {
-    setTimeout(iniciarTour, 600);
-}
-    </script>
-     <!-- Botão flutuante para reiniciar o tour -->
-    <button id="btn-ajuda" onclick="iniciarTour()" title="Ver tour novamente">?</button>
-</body>
+            let esquerda = rect.left;
+            const larguraTooltip = 320;
+            if (esquerda + larguraTooltip > window.innerWidth - 10) {
+                esquerda = window.innerWidth - larguraTooltip - 10;
+            }
+            if (esquerda < 10) esquerda = 10;
+            tooltip.style.top  = topo + "px";
+            tooltip.style.left = esquerda + "px";
+            tooltip.className  = classeSeta;
+            }, 300);
+            }
+            function proximoPasso() {
+            passoAtual++;
+            if (passoAtual >= passosTour.length) {
+                encerrarTour();
+                notificar("Tour concluído! Bom uso do sistema.", "sucesso");
+                return;
+            }
+            mostrarPasso(passoAtual);
+            }
+            function passoAnterior() {
+            if (passoAtual > 0) {
+                passoAtual--;
+                mostrarPasso(passoAtual);
+            }
+            }
+            function reposicionarPasso() {
+            if (spotlight && tooltip) mostrarPasso(passoAtual);
+            }
+            function encerrarTour() {
+            if (spotlight) spotlight.remove();
+            if (tooltip)   tooltip.remove();
+            spotlight = null;
+            tooltip   = null;
+            window.removeEventListener("resize", reposicionarPasso);
+            localStorage.setItem("tourVisto", "sim");
+            }
+        // Inicia o tour automaticamente na primeira vez que o usuário entra
+            if (!localStorage.getItem("tourVisto")) {
+            setTimeout(iniciarTour, 600);
+            }
+        </script>
+
+        <!-- Botão flutuante para reiniciar o tour -->
+        <button id="btn-ajuda" onclick="iniciarTour()" title="Ver tour novamente">Ajuda?</button>
+    </body>
 </html>
